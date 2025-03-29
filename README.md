@@ -1,0 +1,1 @@
+# algoritimos-lp-1s-2025
