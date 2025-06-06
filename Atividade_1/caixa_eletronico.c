@@ -6,6 +6,8 @@ int opcao;
 float saldo = 1518.00;
 float valor;
 
+do{ 
+
     printf("\nBem-vindo(a) ao caixa eletronico!\n");
     printf("Escolha uma das opcao\n");
     printf("1 - Ver saldo\n");
@@ -35,9 +37,16 @@ float valor;
         printf("Valor depositado com sucesso!\n");
         printf("Novo saldo: R$ %.2f\n", saldo); 
 }
+    else if (opcao == 0){
+        printf("Encerrando o sistema. Obrigado por usar!");
+        break;
+    }
     else{
         printf("Opcao invalida! Tente novamente.\n");
      }   
- 
+        printf("Deseja continuar usando o caixinha?\n1 - Sim\n2 - Nao\n ");
+            scanf("%d", &opcao);
+
+    } while(opcao == 1);
     return 0;
 }

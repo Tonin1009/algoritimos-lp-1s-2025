@@ -3,7 +3,7 @@
 int main (int argc, char* argv[]){
 
     int operacao, n1, n2;
-
+    do{
     printf("Bem vindo(a) a calculadora\n");
       
     printf("Digite a operacao que deseja fazer: \n");
@@ -46,9 +46,14 @@ int main (int argc, char* argv[]){
     printf("Digite o n2: \n");
         scanf("%d", &n2);
     int resultado_divisao = n1 / n2;
-    printf("Resultado: %d", resultado_divisao);
-
+    printf("Resultado: %d\n",resultado_divisao);
     }
+
+    printf("\nDeseja fazer outra operacao?\n1 - Sim\n2 - Nao\n");
+        scanf("%d", &operacao);
+
+    }while(operacao == 1);
+
     return 0;
 
 }
